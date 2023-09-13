@@ -1,0 +1,426 @@
+* {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1.6rem;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  border: 0px;
+  margin: -8px;
+  overflow-x: hidden;
+
+}
+
+/*Trang chủ */
+
+/* Reset các giá trị mặc định của trình duyệt */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Thiết lập font chung cho trang web */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+
+  /* background-color: #0d3d53; */
+  /* Background-image: linear-gradient(#3067c0 0%, #0d3d53 100%) */
+}
+
+/* Thiết lập giao diện của header */
+
+.header {
+  position: fixed;
+  z-index: 10;
+  right: 0;
+  top: 0;
+  left: 0;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0 0;
+
+}
+
+
+
+.header a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.header h1 {
+  font-size: 36px;
+}
+
+.brand a {
+  color: red !important;
+
+}
+
+.brand img {
+  width: 100px;
+  height: 50px;
+}
+
+/* Thiết lập giao diện của navigation menu */
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Thiết lập giao diện cho danh sách phim */
+.content {
+  color: aliceblue;
+  padding-top: 0.1px;
+}
+
+.content-outstanding {
+  /* text-align: center; */
+  margin-bottom: 1px;
+  font-size: 34px;
+  color: #055388;
+}
+
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px;
+  margin-top: 113px;
+}
+
+.movie-card {
+  /* width: 130px;
+  height: auto;
+  margin: 0%;
+  padding: 0%; */
+  /* background-color: #0d3d53; 
+  border: 1px solid #ddd;
+  padding: 10px; */
+  /* margin-bottom: auto;
+  text-align: center; */
+  width: 120px;
+  height: auto;
+  text-align: center;
+  margin-left: 30px;
+}
+
+
+.movie-card img {
+  /* max-width: 100%;
+  height: auto;
+  max-height: 400px;
+  min-height: 390px;
+  transition: 1s; */
+  object-fit: cover;
+  width: 120px;
+  height: 190px;
+  transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+
+
+
+
+
+
+
+
+.movie-card h5 {
+  font-size: 14px;
+  text-align: center;
+  color: aliceblue;
+
+  /* margin-top: 10px; */
+}
+
+.movie-card p {
+  font-size: 14px;
+  /* margin-top: 5px; */
+  margin-bottom: 50px;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+}
+
+.movie-card a {
+  font-size: 14px;
+  color: aliceblue;
+  text-decoration: none;
+}
+
+/* .movie-card a {
+  display: block;
+  margin-top: 10px;
+  text-decoration: none;
+  background-color: #333;
+  color: #fff;
+ padding: px 10px; 
+  font-weight: bold;
+  padding-bottom: 10px; 
+} */
+
+.movie-card-play {
+  padding-bottom: 5px;
+}
+
+/* .movie-card a:hover {
+  background-color: #ff6600;
+} */
+
+/* BOOTSTRAP ***********************************************************************BOOTSTRAP */
+.rounded {
+  width: 120px;
+  height: 190px;
+  background-color: #333;
+  margin-right: 25px;
+  /* margin-bottom: 50px; */
+
+}
+
+.rounded:hover {
+  background-color: brown;
+  opacity: 0.5;
+}
+
+
+
+.logoHD {
+  position: relative;
+  top: 20px;
+  float: right;
+  line-height: 1em;
+  width: auto;
+  border-radius: 4px;
+  padding: 1px 10px;
+  font-size: 11px;
+  font-weight: 500;
+  height: auto;
+  background: rgba(209, 28, 28, 0.9);
+  color: #fff;
+  z-index: 1;
+}
+
+.logoTap {
+  position: relative;
+  top: 21px;
+  float: right;
+  line-height: 1em;
+
+  width: auto;
+  border-radius: 100px;
+  padding: 2px;
+  font-size: 11px;
+  font-weight: 500;
+  height: auto;
+  background: rgba(31, 17, 216, 0.9);
+
+  color: #fff;
+  z-index: 1;
+}
+
+/* .box{
+  width: 120px;
+  height: 50px ;
+  display: inline-block;
+  font-weight: 700;
+  background-color: rgba(250, 250, 250, 0.7); 
+}
+#box1{
+  text-align: center;
+  position: absolute;
+  top: 10cm;
+  bottom: auto;
+  
+} */
+
+/* Thiết lập giao diện cho phần thể loại */
+.categories {
+  margin: 20px;
+  display: none;
+  color: #fff;
+}
+
+.categories h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.categories ul {
+  list-style: none;
+}
+
+.categories ul li {
+  margin-bottom: 10px;
+}
+
+.categories ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+
+
+.btn-danger-setting {
+  width: 70px;
+  padding-right: 10px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/*Menu các quốc gia*/
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f5f5f5;
+  z-index: 1;
+  cursor: default;
+  box-shadow: 0 1px 3.125rem 0 rgba(0, 00, 0, 0.2);
+  padding: 10px 10px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.nav-items-center {
+  justify-content: center !important;
+}
+
+@media (min-width:576px) {
+  .size-search {
+    width: 400px !important;
+  }
+}
+
+.size-search {
+  border: none !important;
+  color: #ffffff !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+.header-menu-country {
+  position: relative;
+  display: inline-block;
+  padding: 0 12px 0 12px;
+  cursor: pointer;
+  --webkit-tap-highlight-color: transparent;
+}
+
+.header-menu-country:hover.header-menu-category {
+  display: block;
+}
+
+/* Thiết lập giao diện cho footer */
+.footer {
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.footer-item {
+  background-color: #009EFD;
+
+}
+
+
+.menu ul a {
+  text-decoration: none
+}
+
+.menu {
+  width: 900px;
+  border: 1px solid #dc5353;
+  height: 40px;
+  background-color: #874444;
+  font-family: Helvetica, sans-serif;
+  font-size: 13px;
+  margin: auto;
+}
+
+
+
+.menu ul li {
+  list-style-type: none;
+  display: inline;
+  margin-left: 120px;
+
+
+}
+
+.searchBox {
+  display: flex;
+  max-width: 230px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  background: #727e8f;
+  border-radius: 50px;
+  position: relative;
+}
+
+.searchButton {
+  color: white;
+  position: absolute;
+  right: 8px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--gradient-2, linear-gradient(90deg, #2AF598 0%, #009EFD 100%));
+  border: 0;
+  display: inline-block;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+}
+
+/*hover effect*/
+button:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 10px 20px;
+  transform: translateY(-3px);
+}
+
+/*button pressing effect*/
+button:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.searchInput {
+  border: none;
+  background: none;
+  outline: none;
+  color: white;
+  font-size: 15px;
+  padding: 24px 46px 24px 26px;
+}

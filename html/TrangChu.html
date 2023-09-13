@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERDMovie</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css"> <!-- Liên kết đến tệp CSS để tùy chỉnh giao diện -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body style="background-color: #1d1b1b;">
+    <div class="container">
+
+        <header class="header">
+            <div class="d-flex flex-row-reverse">
+                <button style="margin-right: 10px;" class="btn btn-success btn-success-setting">Đăng Nhập</button>
+                <button style="margin-right: 10px;" class="btn btn-danger btn-danger-setting ">Đăng Kí </button>
+            </div>
+        
+            <nav class="navbar navbar-expand-lg navbar-inverse">
+                <div class="container-fluid">
+                    <div class="brand">
+                        <a href="TrangChu.html" style="text-decoration: none;">
+                            <h1><img src="../image/logo.png" alt="LOGO"></h1>
+                        </a>
+
+                    </div>
+
+                    <button class="navbar-toggler bg-dark" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-center">
+                            <li class="nav-item">
+                                <a class="nav-link active h5"  aria-current="page"  href="TrangChu.html">Trang Chủ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active h5" aria-current="page" href="#">Phim mới</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link h5" href="#">Phim Lẻ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link h5" href="#">Phim Bộ</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link h5"  href="#">Thể Loại</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link h5" href="#">
+                                    Quốc Gia
+                                </a>
+                                <div class="dropdown-content bg-dark align-items-end">
+                                    <a class="dropdown-item text-start h6" href="PhimHan.html">&#10148;Phim Hàn Quốc</a>
+                                    <div class="dropdown-divider text-start"></div>
+                                    <a class="dropdown-item h6 text-start" href="PhimNhat.html">&#10148;Phim Nhật Bản</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item text-start h6" href="PhimMy.html">&#10148;Phim Âu-Mỹ</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item h6 text-start" href="PhimTrung.html">&#10148;Phim Trung Quốc</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item h6 text-start" href="PhimViet.html">&#10148;Phim Việt Nam</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item h6 text-start" href="PhimThai.html">&#10148;Phim Thái Lan</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-3 size-search bg-dark" type="search" placeholder="Tìm Kiếm"
+                            aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Tìm Kiếm</button>
+                    </form>
+                </div>
+
+            </nav>
+
+        </header>
+
+
+
+
+
+        <h1 class="content-outstanding"
+            style=" font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; margin-top: 140px;">
+            Phim
+            Hoạt Hình</h1>
+        <div class="row">
+            <div class="col-lg-2 col-md-3 col-sm-4">
+                <div class="movie-card">
+                    <span class="logoTap">1000 Tập</span>
+                    <a href="#"><img src="../image/conan.jpg" class="rounded" alt="...">
+                        Thám Tử Lừng Danh Conan
+                    </a>
+                </div>
+
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4">
+                <div class="movie-card">
+                    <span class="logoHD">HD</span>
+                    <a href="#"><img src="../image/doremon.jpg" class="rounded" alt="...">
+                        Doraemon: Viện Bảo Tàng Bảo Bối
+                    </a>
+                </div>
+            </div>
+            <div class=" col-lg-2 col-md-3 col-sm-4">
+                <div class="movie-card">
+                    <span class="logoTap">1071 Tập</span>
+                    <a href="#"><img src="../image/One_Piece,_Volume_61_Cover_(Japanese).jpg" class="rounded" alt="...">
+                        One Piece: Đảo Hải Tặc
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4">
+                <div class="movie-card">
+                    <span class="logoHD">HD</span>
+                    <a href="#"><img src="../image/NOBITA.jpg" class="rounded" alt="...">
+                        Doraemon: Tây Du Ký
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4">
+                <div class="movie-card">
+                    <span class="logoHD">HD</span>
+                    <a href="#"><img src="../image/Howl.jpg" class="rounded" alt="...">
+                        Toà Lâu Đài Di Động Của Howl
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4">
+                <div class="movie-card">
+                    <span class="logoHD">HD</span>
+                    <a href="#"><img src="../image/Khoá Chặt Cửa Nào Suzume.jpg" class="rounded" alt="...">
+                        Khoá Chặt Cửa Nào Suzume
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4">
+                <div class="movie-card">
+                    <span class="logoHD">HD</span>
+                    <a href="#"><img src="../image/Toy Strory 4.jpg" class="rounded" alt="...">
+                        Toy Strory 4
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4">
+                <div class="movie-card">
+                    <span class="logoHD">HD</span>
+                    <a href="#"><img src="../image/Xứ Sở Các Nguyên Tố.jpg" class="rounded" alt="...">
+                        Xứ Sở Các Nguyên Tố
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4">
+                <div class="movie-card">
+                    <span class="logoHD">HD</span>
+                    <a href="#"><img src="../image/Tom and Jerry Snowman's Land.jpg" class="rounded" alt="...">
+                        Tom and Jerry: Snowman's Land
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4">
+                <div class="movie-card">
+                    <span class="logoTap">82 Tập</span>
+                    <a href="#"><img src="../image/Pokémon Season 1 Indigo League (2006).jpg" class="rounded" alt="...">
+                        Pokemon Season 1: Indigo League (2006)
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4">
+                <div class="movie-card">
+                    <span class="logoHD">HD</span>
+                    <a href="#"><img src="../image/Madagascar 3 Europe’s Most Wanted.jpg" class="rounded" alt="...">
+                        Madagascar 3: Thần Tượng Châu Âu
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4">
+                <div class="movie-card">
+                    <span class="logoHD">HD</span>
+                    <a href="#"><img src="../image/Vùng Đất Linh Hồn.jpg" class="rounded" alt="...">
+                        Vùng Đất Linh Hồn
+                    </a>
+                </div>
+            </div>
+
+
+            <!--PHIM PHIÊU LƯU-->
+            <hr>
+            <h1 class="content-outstanding"
+                style=" font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Phim Phiêu Lưu
+            </h1>
+            <div class="container mt-3">
+                <div class="row">
+                    <div class="col-lg-2 col-md-3 col-sm-4">
+                        <div class="movie-card">
+                            <span class="logoHD">HD</span>
+                            <a href="#"><img src="../image/Harry Potter 1 Hòn Đá Phù Thuỷ.jpg" class="rounded"
+                                    alt="...">
+                                Harry Potter 1:Hòn Đá Phù Thuỷ
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4">
+                        <div class="movie-card">
+                            <span class="logoHD">HD</span>
+                            <a href="#"><img src="../image/Harry Potter 2 Hầm Chứa Bí Mật.jpg" class="rounded"
+                                    alt="...">
+                                Harry Potter 2: Hầm Chứa Bí Mật
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4">
+                        <div class="movie-card">
+                            <span class="logoHD">HD</span>
+                            <a href="#"><img src="../image/Harry Potter 3 Tên Ngục Azkaban.jpg" class="rounded"
+                                    alt="...">
+                                Harry Potter 3: Tên Ngục Azkaban
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4">
+                        <div class="movie-card">
+                            <span class="logoHD">HD</span>
+                            <a href="#"><img src="../image/Harry Potter 4 Chiếc Cốc Lửa.jpg" class="rounded" alt="...">
+                                Harry Potter 4: Chiếc Cốc Lửa
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4">
+                        <div class="movie-card">
+                            <span class="logoHD">HD</span>
+                            <a href="#"><img src="../image/Harry Potter 5 Mệnh Lệnh Hội Phượng Hoàng.jpg"
+                                    class="rounded" alt="...">
+                                Harry Potter 5: Mệnh Lệnh Hội Phượng Hoàng
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4">
+                        <div class="movie-card">
+                            <span class="logoHD">HD</span>
+                            <a href="#"><img src="../image/Harry Potter 6 Hoàng Tử Lai.jpg" class="rounded" alt="...">
+                                Harry Potter 6: Hoàng Tử Lai
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4">
+                        <div class="movie-card">
+                            <span class="logoHD">HD</span>
+                            <a href="#"><img src="../image//Harry Potter 7.1 Trận Chiến Cuối Cùng.jpg" class="rounded"
+                                    alt="...">
+                                Harry Potter 7.1: Trận Chiến Cuối Cùng
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4">
+                        <div class="movie-card">
+                            <span class="logoHD">HD</span>
+                            <a href="#"><img src="../image/Harry Potter 7.2 Trận Chiến Cuối Cùng.jpg" class="rounded"
+                                    alt="...">
+                                Harry Potter 7.2 Trận Chiến Cuối Cùng
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4">
+                        <div class="movie-card">
+                            <span class="logoHD">HD</span>
+                            <a href="#"><img
+                                    src="../image/Cướp biển vùng Caribbean 1 Lời nguyền của tàu Ngọc Trai Đen.jpg"
+                                    class="rounded" alt="...">
+                                Cướp biển vùng Caribbean 1 Lời nguyền của tàu Ngọc Trai Đen
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4">
+                        <div class="movie-card">
+                            <span class="logoHD">HD</span>
+                            <a href="#"><img src="../image/Cướp Biển Vùng Caribbean 2 Chiếc Rương Tử Thần.jpg"
+                                    class="rounded" alt="...">
+                                Cướp Biển Vùng Caribbean 2 Chiếc Rương Tử Thần
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4">
+                        <div class="movie-card">
+                            <span class="logoHD">HD</span>
+                            <a href="#"><img src="../image/Cướp Biển Vùng Caribbean 4 Suối Nguồn Tươi Trẻ.jpg"
+                                    class="rounded" alt="...">
+                                Cướp Biển Vùng Caribbean 4 Suối Nguồn Tươi Trẻ
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4">
+                        <div class="movie-card">
+                            <span class="logoHD">HD</span>
+                            <a href="#"><img src="../image/Cướp Biển Vùng Caribbean 5 Salazar Báo Thù.jpg"
+                                    class="rounded" alt="...">
+                                Cướp Biển Vùng Caribbean 5 Salazar Báo Thù
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!--PHIM HÀNH ĐỘNG-->
+                <hr>
+                <h1 class="content-outstanding"
+                    style=" font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Phim Hành
+                    Động
+                </h1>
+                <div class="container mt-3">
+                    <div class="row">
+                        <div class="col-lg-2 col-md-3 col-sm-4 ">
+                            <div class="movie-card">
+                                <span class="logoHD">HD</span>
+                                <a href="#"><img src="../image/London Thất Thủ.jpg" class="rounded" alt="...">
+                                    London Thất Thủ
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-4">
+                            <div class="movie-card">
+                                <span class="logoHD">HD</span>
+                                <a href="#"><img src="../image/Biệt đội G.I. Joe Cuộc Chiến Mãng Xà.jpg" class="rounded"
+                                        alt="...">
+                                    Biệt đội G.I. Joe Cuộc Chiến Mãng Xà
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-4">
+                            <div class="movie-card">
+                                <span class="logoHD">HD</span>
+                                <a href="#"><img src="../image/Đua Hoặc Chết.jpg" class="rounded" alt="...">
+                                    Đua Hoặc Chết
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-4">
+                            <div class="movie-card">
+                                <span class="logoHD">HD</span>
+                                <a href="#"><img src="../image/Diepvan4.jpg" class="rounded" alt="...">
+                                    Diệp Vấn 4: Hồi Cuối
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-4">
+                            <div class="movie-card">
+                                <span class="logoHD">HD</span>
+                                <a href="#"><img src="../image/Trò Chơi Giết Người.jpg" class="rounded" alt="...">
+                                    Trò Chơi Giết Người
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-4">
+                            <div class="movie-card">
+                                <span class="logoHD">HD</span>
+                                <a href="#"><img src="../image/Cuộc Chiến Chống Pharaoh.jpg" class="rounded" alt="...">
+                                    Cuộc Chiến Chống Pharaoh
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-4">
+                            <div class="movie-card">
+                                <span class="logoHD">HD</span>
+                                <a href="#"><img src="../image/Chủng Tộc Bất Tử.jpg" class="rounded" alt="...">
+                                    Chủng Tộc Bất Tử
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-4">
+                            <div class="movie-card">
+                                <span class="logoHD">HD</span>
+                                <a href="#"><img src="../image/Lệnh Truy Nã Đỏ.jpg" class="rounded" alt="...">
+                                    Lệnh Truy Nã Đỏ
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-4">
+                            <div class="movie-card">
+                                <span class="logoHD">HD</span>
+                                <a href="#"><img src="../image/Goá Phụ Đen.png" class="rounded" alt="...">
+                                    Goá Phụ Đen
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-4">
+                            <div class="movie-card">
+                                <span class="logoHD">HD</span>
+                                <a href="#"><img src="../image/Shang-Chi và Huyền Thoại Thập Luân.jpg" class="rounded"
+                                        alt="...">
+                                    Shang-Chi và Huyền Thoại Thập Luân
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-4">
+                            <div class="movie-card">
+                                <span class="logoHD">HD</span>
+                                <a href="#"><img src="../image/Không Phải Lúc Chết.jpg" class="rounded" alt="...">
+                                    Không Phải Lúc Chết
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-4">
+                            <div class="movie-card">
+                                <span class="logoHD">HD</span>
+                                <a href="#"><img src="../image/Nhà Trắng Thất Thủ.jpg" class="rounded" alt="...">
+                                    Nhà Trắng Thất Thủ
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer">
+                <p><a href="https://www.facebook.com/profile.php?id=100066329521522" style="text-decoration: none;">Phan
+                        Văn Toàn</a></p>
+                <p><a href="https://www.facebook.com/profile.php?id=100052721232206"
+                        style="text-decoration: none;">Nguyễn Chí Thanh</a></p>
+                <p><a href="https://www.facebook.com/that.ngoc.9465" style="text-decoration: none;">Lương Ngọc
+                        Thật</a>
+                </p>
+                <p><a href="https://www.facebook.com/profile.php?id=100038079161666" style="text-decoration: none;">Lý
+                        Anh Khoa</a></p>
+                <p><a href="https://www.facebook.com/dc.alvin.9" style="text-decoration: none;">Ngô Hoài
+                        THanh</a>
+                </p>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
