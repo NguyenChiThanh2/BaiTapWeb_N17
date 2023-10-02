@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ERDMovie</title>
+    <title>Phim Việt Nam full HD, mới nhất</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/bootstrap.min.css"> <!-- Liên kết đến tệp CSS để tùy chỉnh giao diện -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -15,10 +15,6 @@
     <div class="container">
 
         <header class="header">
-            <div class="d-flex flex-row-reverse">
-                <a href="DangNhap.html"><button style="margin-right: 10px;" class="btn btn-success btn-success-setting">Đăng Nhập</button></a>
-                <a href="Dangki.html"><button style="margin-right: 10px;" class="btn btn-danger btn-danger-setting ">Đăng Kí </button></a>
-            </div>
 
             <nav class="navbar navbar-expand-lg navbar-inverse">
                 <div class="container-fluid">
@@ -79,10 +75,14 @@
 
 
                     <form class="d-flex" role="search">
-                        <input class="form-control me-3 size-search bg-dark" type="search" placeholder="Tìm Kiếm"
+                        <input class="form-control me-3 header-search-size bg-dark" type="search" placeholder="Tìm Kiếm"
                             aria-label="Search">
                         <button class="btn btn-outline-success" type="submit">Tìm Kiếm</button>
                     </form>
+
+                    <div class="d-flex flex-row-reverse">
+                        <a href="DangNhap.html"><button class="btn btn-danger btn-success-setting mr-3">Đăng nhập</button></a>
+                    </div>
                 </div>
 
             </nav>
@@ -93,9 +93,9 @@
 
 
 
-        <h1 class="content-outstanding"
-            style=" font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; margin-top: 140px;">
-            Phim Việt Nam</h1>
+        <div class="content-outstanding">
+            <h1> Phim Việt Nam</h1>
+        </div>
         <div class="row">
             <div class="col-lg-2 col-md-3 col-sm-4">
                 <div class="movie-card">
@@ -211,7 +211,7 @@
                 <div class="movie-card">
                     <span class="logoTap">85 Tập</span>
                     <a href="#"><img src="../image/Về_nhà_đi_con_poster.jpg" class="rounded" alt="Về Nhà Đi Con ">
-                        Về Nhà Đi Con 
+                        Về Nhà Đi Con
                     </a>
                 </div>
             </div>
@@ -223,22 +223,23 @@
 
 
         </div>
-        <footer class="footer">
-            <p><a href="https://www.facebook.com/profile.php?id=100066329521522" style="text-decoration: none;">Phan
-                    Văn Toàn</a></p>
-            <p><a href="https://www.facebook.com/profile.php?id=100052721232206" style="text-decoration: none;">Nguyễn
-                    Chí Thanh</a></p>
-            <p><a href="https://www.facebook.com/that.ngoc.9465" style="text-decoration: none;">Lương Ngọc
-                    Thật</a>
-            </p>
-            <p><a href="https://www.facebook.com/profile.php?id=100038079161666" style="text-decoration: none;">Lý
-                    Anh Khoa</a></p>
-            <p><a href="https://www.facebook.com/dc.alvin.9" style="text-decoration: none;">Ngô Hoài
-                    THanh</a>
-            </p>
-        </footer>
+
     </div>
     </div>
+    <footer class="footer">
+        <p><a href="https://www.facebook.com/profile.php?id=100066329521522" style="text-decoration: none;">Phan
+                Văn Toàn</a></p>
+        <p><a href="https://www.facebook.com/profile.php?id=100052721232206"
+                style="text-decoration: none;">Nguyễn Chí Thanh</a></p>
+        <p><a href="https://www.facebook.com/that.ngoc.9465" style="text-decoration: none;">Lương Ngọc
+                Thật</a>
+        </p>
+        <p><a href="https://www.facebook.com/profile.php?id=100038079161666" style="text-decoration: none;">Lý
+                Anh Khoa</a></p>
+        <p><a href="https://www.facebook.com/dc.alvin.9" style="text-decoration: none;">Ngô Hoài
+                THanh</a>
+        </p>
+</footer>
 </body>
 
 </html>

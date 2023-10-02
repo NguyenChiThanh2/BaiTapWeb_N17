@@ -46,7 +46,8 @@ body {
   background-color: #333;
   color: #fff;
   text-align: center;
-  padding: 10px 0 0;
+  padding: 10px 0 0 ;
+  bottom: auto;
 
 }
 
@@ -67,8 +68,10 @@ body {
 }
 
 .brand img {
-  width: 100px;
+  width: 80px;
   height: 50px;
+  margin-top: -15px;
+  margin-right: 20px;
 }
 
 /* Thiết lập giao diện của navigation menu */
@@ -98,6 +101,8 @@ nav ul li a {
   margin-bottom: 1px;
   font-size: 34px;
   color: #055388;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-top: 100px;
 }
 
 .movie-list {
@@ -288,8 +293,13 @@ nav ul li a {
 }
 
 .dropdown {
+  
   position: relative;
   display: inline-block;
+  margin-bottom: -15px;
+  
+
+  
 }
 
 /*Menu các quốc gia*/
@@ -301,6 +311,7 @@ nav ul li a {
   cursor: default;
   box-shadow: 0 1px 3.125rem 0 rgba(0, 00, 0, 0.2);
   padding: 10px 10px;
+  margin-top: 15px;
 }
 
 .dropdown:hover .dropdown-content {
@@ -312,15 +323,17 @@ nav ul li a {
 }
 
 @media (min-width:576px) {
-  .size-search {
-    width: 400px !important;
+  .header-search-size {
+    width: 300px !important;
   }
 }
 
-.size-search {
+.header-search-size {
   border: none !important;
   color: #ffffff !important;
 }
+
+
 
 
 
@@ -477,4 +490,21 @@ button:active {
 .signup-form h2 {
   text-align: center;
   color: #fff;
+}
+
+/*---------------------------------------------------------------------------------------*/
+.d-flex{
+  margin-right: 10px;
+}
+.trailer{
+  margin-top: 100px;
+  margin-bottom: 20px;
+  background-color: #009EFD;
+
+}
+ul.sub-menu{
+  padding: 5px;
+  overflow: hidden;
+
+
 }
