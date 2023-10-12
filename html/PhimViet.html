@@ -6,231 +6,242 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phim Việt Nam full HD, mới nhất</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/bootstrap.min.css"> <!-- Liên kết đến tệp CSS để tùy chỉnh giao diện -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../css/bootstrap5.min.css">
+    <script src="../js/jquery3.7.1.js"> </script>
+    <script src="../js/bootstrap5.bundle.min.js"> </script>
 
 </head>
 
-<body style="background-color: #1d1b1b;">
-    <div class="container">
+<body>
+    <div class="bg-dark">
+        <div class="container">
 
-        <header class="header">
+            <header class="header">
+                <nav class="navbar navbar-expand-lg navbar-inverse">
+                    <div class="container-fluid">
 
-            <nav class="navbar navbar-expand-lg navbar-inverse">
-                <div class="container-fluid">
-                    <div class="brand">
-                        <a href="TrangChu.html" style="text-decoration: none;">
-                            <h1><img src="../image/logo.png" alt="LOGO"></h1>
+
+                        <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="brand">
+                            <a href="TrangChu.html" style="text-decoration: none;">
+                                <h1><img src="../image/logo.png" alt="LOGO"></h1>
+                            </a>
+
+                        </div>
+                        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-center fs-3 fw-bold text-white">
+                                <li class="nav-item">
+                                    <a class="nav-link active h5 " aria-current="page" href="TrangChu.html">Trang
+                                        Chủ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link h5" aria-current="page" href="#">Phim mới</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link h5" href="Phimle.html">Phim Lẻ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link h5" href="Phimbo.html">Phim Bộ</a>
+                                </li>
+                                <!--Thể Loại-->
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link h5" href="#">
+                                        Thể Loại
+                                    </a>
+                                </li>
+                                <!--Quốc Gia-->
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link  dropdown-toggle" href="#">
+                                        Quốc Gia
+                                    </a>
+                                    <div class="dropdown-content dropdown-menu bg-dark px-4 fw-bold">
+                                        <a class="dropdown-item p-3 px fs-6 text-start" href="PhimHan.html">&#10148;Phim
+                                            Hàn
+                                            Quốc</a>
+
+                                        <a class="dropdown-item p-3 fs-6 text-start" href="PhimNhat.html">&#10148;Phim
+                                            Nhật
+                                            Bản</a>
+
+                                        <a class="dropdown-item p-3 fs-6 text-start" href="PhimMy.html">&#10148;Phim
+                                            Âu-Mỹ</a>
+
+                                        <a class="dropdown-item p-3 fs-6 text-start" href="PhimTrung.html">&#10148;Phim
+                                            Trung
+                                            Quốc</a>
+
+                                        <a class="dropdown-item p-3 fs-6 text-start" href="PhimViet.html">&#10148;Phim
+                                            Việt
+                                            Nam</a>
+
+                                        <a class="dropdown-item p-3 fs-6 text-start" href="PhimThai.html">&#10148;Phim
+                                            Thái
+                                            Lan</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-3 header-search-size bg-dark" type="search"
+                                placeholder="Tìm Kiếm" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Tìm Kiếm</button>
+                        </form>
+                        <div class="d-flex flex-row-reverse">
+                            <a href="DangNhap.html"><button class="btn btn-danger btn-success-setting mr-3">Đăng
+                                    nhập</button></a>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+
+
+
+
+
+            <div class="content-outstanding">
+                <h1> Phim Việt Nam</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                    <div class="movie-card">
+                        <span class="logoHD">HD</span>
+                        <a href="#"><img src="../image/Đat_Phuong_Nam_Phim_Dien_Ảnh.jpg" class="rounded"
+                                alt=" Đất Rừng Phương Nam(Phim điện ảnh)">
+                            Đất Rừng Phương Nam(Phim điện ảnh)
                         </a>
-
                     </div>
 
-                    <button class="navbar-toggler bg-dark" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-center">
-                            <li class="nav-item">
-                                <a class="nav-link active h5" aria-current="page" href="TrangChu.html">Trang Chủ</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active h5" aria-current="page" href="#">Phim mới</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link h5" href="Phimle.html">Phim Lẻ</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link h5" href="Phimbo.html">Phim Bộ</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link h5" href="#">Thể Loại</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link h5" href="#">
-                                    Quốc Gia
-                                </a>
-                                <div class="dropdown-content bg-dark align-items-end">
-                                    <a class="dropdown-item text-start h6" href="PhimHan.html">&#10148;Phim Hàn Quốc</a>
-                                    <div class="dropdown-divider text-start"></div>
-                                    <a class="dropdown-item h6 text-start" href="PhimNhat.html">&#10148;Phim Nhật
-                                        Bản</a>
-                                    <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item text-start h6" href="PhimMy.html">&#10148;Phim Mỹ</a>
-                                    <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item h6 text-start" href="PhimTrung.html">&#10148;Phim Trung
-                                        Quốc</a>
-                                    <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item h6 text-start" href="PhimViet.html">&#10148;Phim Việt
-                                        Nam</a>
-                                    <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item h6 text-start" href="PhimThai.html">&#10148;Phim Thái
-                                        Lan</a>
-                                </div>
-                            </li>
-                        </ul>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                    <div class="movie-card">
+                        <span class="logoHD">HD</span>
+                        <a href="#"><img src="../image//Lat-Mat-6-Tam-Ve-Dinh-Menh (1).jpg" class="rounded"
+                                alt="Tấm vé định mệnh">
+                            Lật Mặt 6: Tấm vé định mệnh
+                        </a>
                     </div>
 
-
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-3 header-search-size bg-dark" type="search" placeholder="Tìm Kiếm"
-                            aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Tìm Kiếm</button>
-                    </form>
-
-                    <div class="d-flex flex-row-reverse">
-                        <a href="DangNhap.html"><button class="btn btn-danger btn-success-setting mr-3">Đăng nhập</button></a>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                    <div class="movie-card">
+                        <span class="logoHD">HD</span>
+                        <a href="#"><img src="../image/Con-Nhot-Mot-Chong.jpg" class="rounded" alt="Con Nhót Mót Chồng">
+                            Con Nhót Mót Chồng
+                        </a>
+                    </div>
+                </div>
+                <div class=" col-lg-2 col-md-3 col-sm-4 col-6">
+                    <div class="movie-card">
+                        <span class="logoHD">HD</span>
+                        <a href="#"><img src="../image/nha-ba-nu.jpg" class="rounded" alt="Nhà Bà Nữ">
+                            Nhà Bà Nữ
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                    <div class="movie-card">
+                        <span class="logoHD">HD</span>
+                        <a href="#"><img src="../image/Hai-Phuong.jpg" class="rounded" alt="Hai Phượng">
+                            Hai Phượng
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                    <div class="movie-card">
+                        <span class="logoHD">HD</span>
+                        <a href="#"><img src="../image/Co-gai-den-tu-hom-qua.jpg" class="rounded"
+                                alt="Cô Gái Đến Từ Hôm Qua">
+                            Cô Gái Đến Từ Hôm Qua
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                    <div class="movie-card">
+                        <span class="logoTap">71 + 9 tập đặc biệt</span>
+                        <a href="#"><img src="../image/Cây_táo_nở_hoa_poster.jpeg" class="rounded" alt="Cây Táo Nở Hoa">
+                            Cây Táo Nở Hoa
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                    <div class="movie-card">
+                        <span class="logoTap">47 Tập</span>
+                        <a href="#"><img src="../image/Người_phán_xử_(phim_Việt_Nam).jpg    " class="rounded"
+                                alt="Người Phán Xử">
+                            Người Phán Xử
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                    <div class="movie-card">
+                        <span class="logoTap">40 Tập</span>
+                        <a href="#"><img src="../image/nyc.jpg" class="rounded" alt="Chồng cũ, vợ cũ, người yêu cũ">
+                            Chồng cũ, vợ cũ, người yêu cũ
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                    <div class="movie-card">
+                        <span class="logoTap">20 Tập</span>
+                        <a href="#"><img src="../image/Kinh_Van_Hoa.jpg" class="rounded" alt="Kính Vạn Hoa">
+                            Kính Vạn Hoa
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                    <div class="movie-card">
+                        <span class="logoTap">36 Tập</span>
+                        <a href="#"><img src="../image/Bong_dung_muon_khoc.jpg" class="rounded"
+                                alt="Bỗng Dưng Muốn khóc">
+                            Bỗng Dưng Muốn khóc
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                    <div class="movie-card">
+                        <span class="logoTap">67</span>
+                        <a href="#"><img src="../image/Áp_phích_phim_Cổng_mặt_trời.jpg" class="rounded"
+                                alt="Cổng Mặt Trời">
+                            Cổng Mặt Trời
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                    <div class="movie-card">
+                        <span class="logoHD">HD</span>
+                        <a href="#"><img src="../image/Mat_Biec.jpg" class="rounded" alt="Mắt Biếc">
+                            Mắt Biếc
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                    <div class="movie-card">
+                        <span class="logoTap">85 Tập</span>
+                        <a href="#"><img src="../image/Về_nhà_đi_con_poster.jpg" class="rounded" alt="Về Nhà Đi Con ">
+                            Về Nhà Đi Con
+                        </a>
                     </div>
                 </div>
 
-            </nav>
-
-        </header>
 
 
 
+                <hr>
 
 
-        <div class="content-outstanding">
-            <h1> Phim Việt Nam</h1>
-        </div>
-        <div class="row">
-            <div class="col-lg-2 col-md-3 col-sm-4">
-                <div class="movie-card">
-                    <span class="logoHD">HD</span>
-                    <a href="#"><img src="../image/Đat_Phuong_Nam_Phim_Dien_Ảnh.jpg" class="rounded"
-                            alt=" Đất Rừng Phương Nam(Phim điện ảnh)">
-                        Đất Rừng Phương Nam(Phim điện ảnh)
-                    </a>
-                </div>
-
             </div>
-            <div class="col-lg-2 col-md-3 col-sm-4">
-                <div class="movie-card">
-                    <span class="logoHD">HD</span>
-                    <a href="#"><img src="../image//Lat-Mat-6-Tam-Ve-Dinh-Menh (1).jpg" class="rounded"
-                            alt="Tấm vé định mệnh">
-                        Lật Mặt 6: Tấm vé định mệnh
-                    </a>
-                </div>
-
-            </div>
-            <div class="col-lg-2 col-md-3 col-sm-4">
-                <div class="movie-card">
-                    <span class="logoHD">HD</span>
-                    <a href="#"><img src="../image/Con-Nhot-Mot-Chong.jpg" class="rounded" alt="Con Nhót Mót Chồng">
-                        Con Nhót Mót Chồng
-                    </a>
-                </div>
-            </div>
-            <div class=" col-lg-2 col-md-3 col-sm-4">
-                <div class="movie-card">
-                    <span class="logoHD">HD</span>
-                    <a href="#"><img src="../image/nha-ba-nu.jpg" class="rounded" alt="Nhà Bà Nữ">
-                        Nhà Bà Nữ
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-3 col-sm-4">
-                <div class="movie-card">
-                    <span class="logoHD">HD</span>
-                    <a href="#"><img src="../image/Hai-Phuong.jpg" class="rounded" alt="Hai Phượng">
-                        Hai Phượng
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-3 col-sm-4">
-                <div class="movie-card">
-                    <span class="logoHD">HD</span>
-                    <a href="#"><img src="../image/Co-gai-den-tu-hom-qua.jpg" class="rounded"
-                            alt="Cô Gái Đến Từ Hôm Qua">
-                        Cô Gái Đến Từ Hôm Qua
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-3 col-sm-4">
-                <div class="movie-card">
-                    <span class="logoTap">71 + 9 tập đặc biệt</span>
-                    <a href="#"><img src="../image/Cây_táo_nở_hoa_poster.jpeg" class="rounded" alt="Cây Táo Nở Hoa">
-                        Cây Táo Nở Hoa
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-3 col-sm-4">
-                <div class="movie-card">
-                    <span class="logoTap">47 Tập</span>
-                    <a href="#"><img src="../image/Người_phán_xử_(phim_Việt_Nam).jpg    " class="rounded"
-                            alt="Người Phán Xử">
-                        Người Phán Xử
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-3 col-sm-4">
-                <div class="movie-card">
-                    <span class="logoTap">40 Tập</span>
-                    <a href="#"><img src="../image/nyc.jpg" class="rounded" alt="Chồng cũ, vợ cũ, người yêu cũ">
-                        Chồng cũ, vợ cũ, người yêu cũ
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-3 col-sm-4">
-                <div class="movie-card">
-                    <span class="logoTap">20 Tập</span>
-                    <a href="#"><img src="../image/Kinh_Van_Hoa.jpg" class="rounded" alt="Kính Vạn Hoa">
-                        Kính Vạn Hoa
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-3 col-sm-4">
-                <div class="movie-card">
-                    <span class="logoTap">36 Tập</span>
-                    <a href="#"><img src="../image/Bong_dung_muon_khoc.jpg" class="rounded" alt="Bỗng Dưng Muốn khóc">
-                        Bỗng Dưng Muốn khóc
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-3 col-sm-4">
-                <div class="movie-card">
-                    <span class="logoTap">67</span>
-                    <a href="#"><img src="../image/Áp_phích_phim_Cổng_mặt_trời.jpg" class="rounded" alt="Cổng Mặt Trời">
-                        Cổng Mặt Trời
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-3 col-sm-4">
-                <div class="movie-card">
-                    <span class="logoHD">HD</span>
-                    <a href="#"><img src="../image/Mat_Biec.jpg" class="rounded" alt="Mắt Biếc">
-                        Mắt Biếc
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-3 col-sm-4">
-                <div class="movie-card">
-                    <span class="logoTap">85 Tập</span>
-                    <a href="#"><img src="../image/Về_nhà_đi_con_poster.jpg" class="rounded" alt="Về Nhà Đi Con ">
-                        Về Nhà Đi Con
-                    </a>
-                </div>
-            </div>
-
-
-
-
-            <hr>
-
 
         </div>
-
-    </div>
     </div>
     <footer class="footer">
         <p><a href="https://www.facebook.com/profile.php?id=100066329521522" style="text-decoration: none;">Phan
                 Văn Toàn</a></p>
-        <p><a href="https://www.facebook.com/profile.php?id=100052721232206"
-                style="text-decoration: none;">Nguyễn Chí Thanh</a></p>
+        <p><a href="https://www.facebook.com/profile.php?id=100052721232206" style="text-decoration: none;">Nguyễn Chí
+                Thanh</a></p>
         <p><a href="https://www.facebook.com/that.ngoc.9465" style="text-decoration: none;">Lương Ngọc
                 Thật</a>
         </p>
@@ -239,7 +250,8 @@
         <p><a href="https://www.facebook.com/dc.alvin.9" style="text-decoration: none;">Ngô Hoài
                 THanh</a>
         </p>
-</footer>
+    </footer>
+    </div>
 </body>
 
 </html>
