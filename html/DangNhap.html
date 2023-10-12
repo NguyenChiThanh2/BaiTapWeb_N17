@@ -22,13 +22,13 @@
                             <h2>Đăng Nhập</h2>
                         </div>
                         <div class="card-body ">
-                            <form action="" class="form-horizontal" method="get" id="login_form">
+                            <form action="" class="form-horizontal" method="post" id="login_form">
                                 <div class="mb-3">
                                     <div class="input-group">
                                         <span class="input-group-text p-3">
                                             <i class="fs-5 bi bi-person-circle"></i>
                                         </span>
-                                        <input type="text" class="form-control" placeholder="Tài Khoản">
+                                        <input type="text" class="form-control" placeholder="Tài Khoản" id="username">
                                     </div>
                                 </div>
                                 <div class="mb-3">
@@ -36,7 +36,8 @@
                                         <span class="input-group-text p-3">
                                             <i class="fs-5 bi bi-lock-fill"></i>
                                         </span>
-                                        <input type="password" class="form-control" placeholder="Mật Khẩu">
+                                        <input type="password" class="form-control" placeholder="Mật Khẩu"
+                                            id="password">
                                     </div>
                                 </div>
                                 <div class="mb-3 form-check fs-3 ">
@@ -59,6 +60,27 @@
             </div>
         </div>
     </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.getElementById('login_form').addEventListener('submit', function (event) {
+                event.preventDefault();
+
+                var username = document.getElementById('username').value;
+                var password = document.getElementById('password').value;
+                var remember = document.getElementById('rememberCheckbox').checked;
+
+                if (!username || !password) {
+                    alert('Vui lòng điền đầy đủ thông tin');
+                    return;
+                }
+
+                // Tại đây, bạn có thể gửi dữ liệu đăng nhập đi, ví dụ sử dụng AJAX hoặc chuyển hướng trang.
+
+                alert('Đăng nhập thành công!');
+            });
+        });
+    </script>
 </body>
 
 </html>

@@ -80,6 +80,39 @@
             </div>
         </div>
     </div>
+    <script>
+        document.getElementById('signup_form').addEventListener('submit', function (event) {
+            event.preventDefault(); // Ngăn chặn việc gửi form đi
+
+            // Lấy giá trị từ các trường input
+            var username = document.querySelector('input[placeholder="Tài Khoản"]').value;
+            var password = document.querySelector('input[placeholder="Mật Khẩu"]').value;
+            var confirmPassword = document.querySelector('input[placeholder="Nhập lại mật khẩu"]').value;
+            var contact = document.querySelector('input[placeholder="Số điện thoại hoặc email xác nhận"]').value;
+            var agreeCheckbox = document.getElementById('agreeCheckbox').checked;
+
+            // Kiểm tra điều kiện
+            if (!username || !password || !confirmPassword || !contact) {
+                alert('Vui lòng điền đầy đủ thông tin');
+                return;
+            }
+
+            if (password !== confirmPassword) {
+                alert('Mật khẩu không khớp');
+                return;
+            }
+
+            if (!agreeCheckbox) {
+                alert('Vui lòng đồng ý với điều khoản');
+                return;
+            }
+
+            // Nếu điều kiện đều đúng, bạn có thể gửi form tại đây
+            alert('Form đã gửi thành công!');
+
+            // (Để gửi form đi, bạn có thể sử dụng AJAX hoặc chuyển hướng trang)
+        });
+    </script>
 </body>
 
 </html>
