@@ -12,16 +12,8 @@ $(document).ready(function () {
         var isChecked = $("#exampleCheck1").is(":checked");
 
         //ktra form
-        if (!isChecked) {
-            $("#checkboxError").text("Vui lòng đánh dấu vào ô này.");
-            return false;
-        } else {
-            $("#checkboxError").text("");
-            return false;
-        }
 
         if (email === "ERD@gmail.com" && password === "123456") {
-
             window.location.href = "TrangChu2.html";
         } else {
             $("#passwordError").text("Sai tên đăng nhập hoặc mật khẩu");
@@ -116,12 +108,6 @@ $(document).ready(function () {
 
 
 
-
-
-
-
-
-
 //xử lí header các trang
 $(document).ready(function () {
     $(window).resize(function () {
@@ -189,8 +175,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     $(window).resize(checkWindowWidth);
-
-    // Gọi hàm kiểm tra ngay khi trang được tải
     checkWindowWidth();
 });
 
@@ -198,7 +182,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-// Form đăng kí
+
 
 
 

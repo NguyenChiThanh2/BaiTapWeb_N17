@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Phim Bộ full HD, mới nhất</title>
+    <title>Trang chủ</title>
     <link rel="icon" type="image/png" href="../image/logoBlue.png">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/bootstrap5.min.css">
     <script src="../js/jquery3.7.1.js"> </script>
     <script src="../js/bootstrap5.bundle.min.js"> </script>
     <script src="../js/main.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
 
 </head>
 
@@ -21,20 +22,36 @@
                 <nav class="navbar navbar-expand-lg navbar-inverse">
                     <div class="container ">
                         <div class="brand" id="brand">
-                            <a class="text-decoration-none" href="TrangChu.html">
+                            <a class="text-decoration-none" href="TrangChu2.html">
                                 <h1><img src="../image/logoBlue.png" alt="LOGO"></h1>
                             </a>
                         </div>
-                        <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
+                        <div class="d-md-block  d-sm-block  d-lg-none d-flex position-relative">
+                            <img src="../image/ban.jpg" alt="Biểu tượng ảnh" style="width: 30px; height: 30px;"
+                                class="me-2 rounded rounded-circle" id="avatar-sm">
+                            <div class="info-box bg-333 d-none" id="info-box-sm">
+                                <ul class="text-start py-3">
+                                    <li class=""><i class="bi bi-envelope"></i> Email: ERD@gmail.com</li>
+                                    <li class=""><i class="bi bi-award-fill"></i> Thành viên: VIP</li>
+                                    <li class=""><i class="bi bi-person-lines-fill"></i> Thông tin tài khoản</li>
+                                    <li class=""><i class="bi bi-gear"></i> Cài đặt tài khoản </i></li>
+                                    <li class=""><i class="bi bi-box-arrow-right"></i><a href="Trangchu.html">Đăng
+                                            xuất</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button class="navbar-toggler bg-light d-flex d-md-none d-lg-none" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon "></span>
                         </button>
 
                         <div class="collapse navbar-collapse " id="navbarSupportedContent">
                             <ul class="navbar-nav mb-2 mb-lg-0 fs-3 fw-bold text-white">
                                 <li class="nav-item">
-                                    <a class="btn btn-dark nav-link h5 " aria-current="page" href="TrangChu.html">Trang
+                                    <a class="btn btn-dark nav-link h5 text-active" aria-current="page"
+                                        href="TrangChu.html">Trang
                                         Chủ</a>
                                 </li>
                                 <li class="nav-item">
@@ -45,7 +62,7 @@
                                     <a class=" btn btn-dark nav-link " href="Phimle.html">Phim Lẻ</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="btn btn-dark nav-link h5 text-active" href="Phimbo.html">Phim Bộ</a>
+                                    <a class="btn btn-dark nav-link h5" href="Phimbo.html">Phim Bộ</a>
                                 </li>
                                 <li class="nav-item">
 
@@ -100,7 +117,7 @@
                                 </li>
 
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle btn btn-dark" href="#" id="navbarDropdown"
+                                    <a class="nav-link dropdown-toggle btn btn-dark " href="#" id="navbarDropdown"
                                         role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         Quốc Gia
                                     </a>
@@ -121,7 +138,7 @@
                                                 Thái Lan</a></li>
                                         <li><a class="dropdown-item fw-bold fs-6 p-3" href="PhimHan.html">&#10148;Phim
                                                 Hàn Quốc</a></li>
-                                        <li><a class="dropdown-item fw-bold fs-6 p-3" href="PhimNhat.html">&#10148;Phim
+                                        <li><a class="dropdown-item fw-bold fs-6 p-3 " href="PhimNhat.html">&#10148;Phim
                                                 Nhật Bản</a></li>
                                         <li><a class="dropdown-item fw-bold fs-6 p-3" href="PhimMy.html">&#10148;Phim
                                                 Âu-Mỹ</a></li>
@@ -135,25 +152,102 @@
                                 </li>
                             </ul>
                         </div>
-                        <div id="Search-login-md" class="d-none d-lg-block">
-                            <div
-                                class="d-flex flex-row align-items-end align-items-md-center align-content-md-center ali">
+                        <div id="Search-login-md" class="d-none d-lg-block position-relative">
+                            <div class="d-flex flex-row align-items-end align-items-md-center align-content-md-center">
                                 <form class="d-flex" role="search">
                                     <input class="form-control float-sm-start me-3 header-search-size text-black"
-                                        type="search" placeholder="Nhập tên phim" aria-label="Search">
+                                        type="search" placeholder="Nhập tên phim" aria-label="Search"
+                                        id="header-search">
                                     <button class="btn btn-outline-info" type="submit">Tìm Kiếm</button>
                                 </form>
                             </div>
+                            <div class="d-flex z-3 position-absolute d-md-none" style="width: 78%;"
+                                id="info-history-serach">
+                                <div class="list-group text-black text-start w-100">
+                                    <a href="#"
+                                        class="list-group-item list-group-item-action bg-333 d-flex justify-content-between align-items-center">
+                                        Phim hành động
+                                        <button type="button" class="btn btn-333 text-danger btn-sm">Xóa</button>
+                                    </a>
+                                    <a href="#"
+                                        class="list-group-item list-group-item-action bg-333 d-flex justify-content-between align-items-center">
+                                        Phim tình cảm
+                                        <button type="button" class="btn btn-333 text-danger btn-sm">Xóa</button>
+                                    </a>
+
+                                    <a href="#"
+                                        class="list-group-item list-group-item-action bg-333 d-flex justify-content-between align-items-center">
+                                        Phim Hàn
+                                        <button type="button" class="btn btn-333 text-danger btn-sm">Xóa</button>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
+
+
+
+
+
+                        <div class="d-md-none d-sm-none d- d-none d-lg-block d-flex position-relative">
+                            <img src="../image/ban.jpg" alt="Biểu tượng ảnh" style="width: 30px; height: 30px;"
+                                class="me-2 rounded rounded-circle" id="avatar">
+                            <div class="info-box bg-333 d-none" id="info-box">
+                                <ul class="text-start py-3">
+                                    <li class=""><i class="bi bi-envelope"></i> Email: ERD@gmail.com</li>
+                                    <li class=""><i class="bi bi-award-fill"></i> Thành viên: VIP</li>
+                                    <li class=""><i class="bi bi-person-lines-fill"></i> Thông tin tài khoản</li>
+                                    <li class=""><i class="bi bi-gear"></i> Cài đặt tài khoản </i></li>
+                                    <li class=""><i class="bi bi-box-arrow-right"></i><a href="Trangchu.html">Đăng
+                                            xuất</a>
+
+
+
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
                     </div>
                 </nav>
             </div>
 
+            <div class="content-outstanding position-relative">
+                <h1 class="position-relative">
+                    <a href="PhimNhat.html" class="text-decoration-none position-relative "><i
+                            class="bi bi-film"></i>Phim Hot</a>
+                </h1>
 
-            <div class="container ">
+            </div>
+            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../image/co-giao-em-la-so-1.jpg" class="d-block w-100" alt="co giao em là số 1"
+                            style="max-height: 500px;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../image/ke-an-hon.jpg" class="d-block w-100" style="max-height: 500px;"
+                            alt="kẻ ăn hồn">
+                    </div>
+                    <div class="carousel-item ">
+                        <img src="../image/nguoi-vo-cuoi-cung.png" class="d-block w-100 h-75" alt="người vợ cuối cùng">
+                    </div>
+
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div class="container">
                 <div class="content-outstanding position-relative">
                     <h1 class="position-relative">
-                        <a href="Phimbo.html" class="text-decoration-none position-relative ">Phim Bộ</a>
+                        <a href="PhimNhat.html" class="text-decoration-none position-relative "><i
+                                class="bi bi-film"></i>Phim Nhật Bản</a>
                     </h1>
 
                 </div>
@@ -162,27 +256,27 @@
 
                     <div class="col-lg-2 col-md-3 col-sm-4 col-6">
                         <div class="movie-card">
-                            <span class="logoTap">9 Tập Vietsub</span>
-                            <a href="#"><img src="../image/may-man-cung-la-mot-nghe.jpg" class="rounded"
-                                    alt="May Mắn Cũng Là Một Nghề">
-                                May Mắn Cũng Là Một Nghề
+                            <span class="logoTap">1076 Tập Vietsub</span>
+                            <a href="#"><img src="../image/one_piece.jpg" class="rounded" alt="One Piece">
+                                One Piece
                             </a>
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-3 col-sm-4 col-6">
                         <div class="movie-card">
-                            <span class="logoTap">Full 32 Tập Vietsub</span>
-                            <a href="#"><img src="../image/dem-truoc.jpg" class="rounded" alt="Đêm Trước">
-                                Đêm Trước
+                            <span class="logoTap">974 Tập Vietsub</span>
+                            <a href="#"><img src="../image/tham-tu-lung-danh-conan.jpg" class="rounded"
+                                    alt=" Thám Tử Lừng Danh Conan">
+                                Thám Tử Lừng Danh Conan
                             </a>
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-3 col-sm-4 col-6">
                         <div class="movie-card">
-                            <span class="logoTap">Full 40 Tập Viesub</span>
-                            <a href="#"><img src="../image/mat-troi-ruc-ro-ben-toi.jpg" class="rounded"
-                                    alt="Mặt Trời Rực Rỡ Bên Tôi">
-                                Mặt Trời Rực Rỡ Bên Tôi
+                            <span class="logoTap">Full 349 Vietsub</span>
+                            <a href="#"><img src="../image/bay-vien-ngọc-rong.jpg" class="rounded"
+                                    alt="Bảy Viên Ngọc Rồng">
+                                Bảy Viên Ngọc Rồng
                             </a>
                         </div>
                     </div>
@@ -190,179 +284,274 @@
 
                     <div class="col-lg-2 col-md-3 col-sm-4 col-6">
                         <div class="movie-card">
-                            <span class="logoTap">Full 24 Tập Vietsub</span>
-                            <a href="#"><img src="../image/van-chi-vu.jpg" class="rounded" alt="Vân Chi Vũ">
-                                Vân Chi Vũ
+                            <span class="logoTap">Full 500 Vietsub</span>
+                            <a href="#"><img src="../image/naruto-shippuden.jpg" class="rounded" alt="Naruto Shippuden">
+                                Naruto Shippuden
                             </a>
                         </div>
 
                     </div>
                     <div class="col-lg-2 col-md-3 col-sm-4 col-6">
                         <div class="movie-card">
-                            <span class="logoTap">Full 24 Tập</span>
-                            <a href="#"><img src="../image/tan-len-nham-kieu-hoa-duoc-chong-nhu-y.jpg" class="rounded"
-                                    alt="Tân Lên Nhầm Kiệu Hoa Được Chồng Như Ý">
-                                Tân Lên Nhầm Kiệu Hoa Được Chồng Như Ý
+                            <span class="logoTap">Full 11 Tập Vietsub</span>
+                            <a href="#"><img src="../image/thanh-guom-diet-quy-pho-den-do-ky-vien-tran.jpg"
+                                    class="rounded" alt="Thanh Gương Diệt Quỷ: Phố Đèn Đỏ">
+                                Thanh Gương Diệt Quỷ: Phố Đèn Đỏ
                             </a>
                         </div>
                     </div>
                     <div class=" col-lg-2 col-md-3 col-sm-4 col-6">
                         <div class="movie-card">
-                            <span class="logoTap">Full 8 Tập</span>
-                            <a href="#"><img src="../image/dac-nhiem-su-tu-cai.jpg" class="rounded"
-                                    alt="Đặc Nhiệm Sư Tử Cái">
-                                Đặc Nhiệm Sư Tử Cái
-                            </a>
+                            <span class="logoTap">Full 26 Tập Vietsub</span>
+                            <a href="#"><img src="../image/diet-quy-cuu-nhan.jpg" class="rounded"
+                                    alt="Diệt Quỷ Cứu Nhân">
+                                Diệt Quỷ Cứu Nhân
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-3 col-sm-4 col-6">
-                        <div class="movie-card">
-                            <span class="logoTap">Full 10 Tập</span>
-                            <a href="#"><img src="../image/nguoi-yeu-dau.jpg" class="rounded" alt="Cá Mực Hầm Mật">
-                                Người Yêu Dấu
-                            </a>
-                        </div>
+                    <div class="content-outstanding position-relative">
+                        <h1 class="position-relative">
+                            <a href="PhimMy.html" class="text-decoration-none position-relative "><i
+                                    class="bi bi-film"></i>Phim Âu-Mỹ</a>
+                        </h1>
+
                     </div>
-                    <div class="col-lg-2 col-md-3 col-sm-4 col-6">
-                        <div class="movie-card">
-                            <span class="logoTap">Full 12 Tập</span>
-                            <a href="#"><img src="../image/thoi-gian-goi-ten-em.jpg" class="rounded"
-                                    alt="Thời Gian Gọi Tên Em">
-                                Thời Gian Gọi Tên Em
-                            </a>
+
+                    <div class="row">
+
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                            <div class="movie-card">
+                                <span class="logoTap">Full 13 Tập Vietsub</span>
+                                <a href="#"><img src="../image/phi-vu-trieu-do-phan-1.jpg" class="rounded"
+                                        alt="Phi Vụ Triệu Đô(Phần 1)">
+                                    Phi Vụ Triệu Đô(Phần 1)
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-sm-4 col-6">
-                        <div class="movie-card">
-                            <span class="logoTap">Full 10 Tập</span>
-                            <a href="#"><img src="../image/ky-tich-tinh-yeu.jpg" class="rounded" alt="Kỳ Tích Tình Yêu">
-                                Kỳ Tích Tình Yêu
-                            </a>
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                            <div class="movie-card">
+                                <span class="logoTap">Full 9 Tập Vietsub</span>
+                                <a href="#"><img src="../image/phi-vu-trieu-do-phan-2.jpg" class="rounded"
+                                        alt="Phi Vụ Triệu Đô(Phần 2)">
+                                    Phi Vụ Triệu Đô(Phần 2)
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-sm-4 col-6">
-                        <div class="movie-card">
-                            <span class="logoTap">Full 30 Tập</span>
-                            <a href="#"><img src="../image/toi-mong-giua-ban-ngay.jpg" class="rounded"
-                                    alt="Tôi Mộng Mơ Giữa Ban Ngày">
-                                Tôi Mộng Mơ Giữa Ban Ngày
-                            </a>
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                            <div class="movie-card">
+                                <span class="logoTap">Full 8 Tập Viesub</span>
+                                <a href="#"><img src="../image/phi-vu-trieu-do-phan-3.jpg" class="rounded"
+                                        alt=" Phi Vụ Triệu Đô(Phần 3)">
+                                    Phi Vụ Triệu Đô(Phần 3)
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-sm-4 col-6">
-                        <div class="movie-card">
-                            <span class="logoTap">Full 25 Tập</span>
-                            <a href="#"><img src="../image/vung-trom-khong-the-giau.jpg" class="rounded"
-                                    alt="Vụng Trộm Không Thể Giấu">
-                                Vụng Trộm Không Thể Giấu
-                            </a>
+
+
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                            <div class="movie-card">
+                                <span class="logoTap">Full 8 Tập Vietsub</span>
+                                <a href="#"><img src="../image/phi-vu-trieu-do-phan-4.jpg" class="rounded"
+                                        alt="Phi Vụ Triệu Đô(Phần 4)">
+                                    Phi Vụ Triệu Đô(Phần 4)
+                                </a>
+                            </div>
+
                         </div>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-sm-4 col-6">
-                        <div class="movie-card">
-                            <span class="logoTap">Full 20 tập Vietsub</span>
-                            <a href="#"><img src="../image/tieu-tien-sinh-khong-giong-nhu-vay.jpg" class="rounded"
-                                    alt="Chuyện Yêu Thầm Của Cậu Và Tớ">
-                                Tiêu Tiên Sinh Không Giống Như Vậy
-                            </a>
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                            <div class="movie-card">
+                                <span class="logoTap">Full 10 Tập Vietsub</span>
+                                <a href="#"><img src="../image/phi-vu-trieu-do-phan-5.jpg" class="rounded"
+                                        alt="Phi Vụ Triệu Đô(Phần 5)">
+                                    Phi Vụ Triệu Đô(Phần 5)
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-sm-4 col-6">
-                        <div class="movie-card">
-                            <span class="logoTap">Full 7 Tập VietSub</span>
-                            <a href="#"><img src="../image/co-gai-mang-mat-na.jpg" class="rounded"
-                                    alt="Ba Đường Luân Hồi">
-                                Cô Gái Mang Mặt Nạ
-                            </a>
+                        <div class=" col-lg-2 col-md-3 col-sm-4 col-6">
+                            <div class="movie-card">
+                                <span class="logoHD">HD Vietsub</span>
+                                <a href="#"><img src="../image/biet-doi-sieu-anh-hung-4-hoi-ket.jpg" class="rounded"
+                                        alt="Biệt Đội Siêu Anh Hùng 4:Hồi Kết">
+                                    Biệt Đội Siêu Anh Hùng 4:Hồi Kết
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-sm-4 col-6">
-                        <div class="movie-card">
-                            <span class="logoTap">Full 71 Tập</span>
-                            <a href="#"><img src="../image/Cây_táo_nở_hoa_poster.jpeg" class="rounded"
-                                    alt="Bóng Bàn Trung Quốc: Cuộc Phản Công">
-                                Cây Táo Nở Hoa
-                            </a>
+                        <div class="content-outstanding position-relative">
+                            <h1 class="position-relative">
+                                <a href="PhimPhieuLuu.html" class="text-decoration-none position-relative "><i
+                                        class="bi bi-film"></i>Phim Phiêu Lưu</a>
+                            </h1>
+
                         </div>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-sm-4 col-6">
-                        <div class="movie-card">
-                            <span class="logoTap">Full 50/50 Vietsub</span>
-                            <a href="#"><img src="../image/vuon-sao-bang-2018-25.jpg" class="rounded"
-                                    alt="Vườn Sao Băng">
-                                Vườn Sao Băng
-                            </a>
+                        <div class="container mt-3">
+                            <div class="row">
+                                <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                                    <div class="movie-card">
+                                        <span class="logoHD">HD</span>
+                                        <a href="#"><img src="../image/Harry Potter 1 Hòn Đá Phù Thuỷ.jpg"
+                                                class="rounded" alt="Harry Potter 1:Hòn Đá Phù Thuỷ">
+                                            Harry Potter 1:Hòn Đá Phù Thuỷ
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                                    <div class="movie-card">
+                                        <span class="logoHD">HD</span>
+                                        <a href="#"><img src="../image/Harry Potter 2 Hầm Chứa Bí Mật.jpg"
+                                                class="rounded" alt=" Harry Potter 2: Hầm Chứa Bí Mật">
+                                            Harry Potter 2: Hầm Chứa Bí Mật
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                                    <div class="movie-card">
+                                        <span class="logoHD">HD</span>
+                                        <a href="#"><img src="../image/Harry Potter 3 Tên Ngục Azkaban.jpg"
+                                                class="rounded" alt=" Harry Potter 3: Tên Ngục Azkaban">
+                                            Harry Potter 3: Tên Ngục Azkaban
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                                    <div class="movie-card">
+                                        <span class="logoHD">HD</span>
+                                        <a href="#"><img src="../image/Harry Potter 4 Chiếc Cốc Lửa.jpg" class="rounded"
+                                                alt=" Harry Potter 4: Chiếc Cốc Lửa">
+                                            Harry Potter 4: Chiếc Cốc Lửa
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                                    <div class="movie-card">
+                                        <span class="logoHD">HD</span>
+                                        <a href="#"><img src="../image/Harry Potter 5 Mệnh Lệnh Hội Phượng Hoàng.jpg"
+                                                class="rounded" alt="Harry Potter 5: Mệnh Lệnh Hội Phượng Hoàng">
+                                            Harry Potter 5: Mệnh Lệnh Hội Phượng Hoàng
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                                    <div class="movie-card">
+                                        <span class="logoHD">HD</span>
+                                        <a href="#"><img src="../image/Harry Potter 6 Hoàng Tử Lai.jpg" class="rounded"
+                                                alt="Harry Potter 6: Hoàng Tử Lai">
+                                            Harry Potter 6: Hoàng Tử Lai
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <ul class="pagination justify-content-center mt-4">
+                                        <li class="page-item p-2">
+                                            <a href="#" class="page-link  text-black p-3" aria-label="Previous">
+                                                <span aria-hidden="true">«</span>
+                                            </a>
+                                        </li>
+                                        <li class="page-item p-2">
+                                            <a href="#" class="page-link bg-active text-black p-3">1</a>
+                                        </li>
+                                        <li class="page-item p-2">
+                                            <a href="#" class="page-link text-black p-3">2</a>
+                                        </li>
+                                        <li class="page-item p-2">
+                                            <a href="#" class="page-link text-black p-3">3</a>
+                                        </li>
+                                        <li class="page-item p-2">
+                                            <a href="#" class="page-link text-black p-3">4</a>
+                                        </li>
+                                        <li class="page-item p-2">
+                                            <a href="#" class="page-link text-black p-3" aria-label="Next">
+                                                <span aria-hidden="true">»</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
+
+
                     </div>
                 </div>
-                <div>
-                    <ul class="pagination justify-content-center mt-4">
-                        <li class="page-item p-2">
-                            <a href="#" class="page-link  text-black p-3" aria-label="Previous">
-                                <span aria-hidden="true">«</span>
-                            </a>
-                        </li>
-                        <li class="page-item p-2">
-                            <a href="#" class="page-link bg-active text-black p-3">1</a>
-                        </li>
-                        <li class="page-item p-2">
-                            <a href="#" class="page-link text-black p-3">2</a>
-                        </li>
-                        <li class="page-item p-2">
-                            <a href="#" class="page-link text-black p-3">3</a>
-                        </li>
-                        <li class="page-item p-2">
-                            <a href="#" class="page-link text-black p-3">4</a>
-                        </li>
-                        <li class="page-item p-2">
-                            <a href="#" class="page-link text-black p-3" aria-label="Next">
-                                <span aria-hidden="true">»</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <hr>
-    <footer class="footer">
-        <div class="row">
-            <div class="col-md-4 col-sm-4 col-12">
-                <a href="Trangchu.html"><img src="../image/logoBlue.png" alt="" class="footer-brand"></a>
-            </div>
-            <div class="col-md-4 col-sm-4 col-12 fs-5">
-                <p><a href="https://www.facebook.com/profile.php?id=100066329521522" class="text-decoration-none">Phan
-                        Văn Toàn</a></p>
-                <p><a href="https://www.facebook.com/profile.php?id=100052721232206" class="text-decoration-none">Nguyễn
-                        Chí
-                        Thanh</a></p>
-                <p><a href="https://www.facebook.com/that.ngoc.9465" style="text-decoration: none;">Lương Ngọc
-                        Thật</a>
-                </p>
-                <p><a href="https://www.facebook.com/profile.php?id=100038079161666" class="text-decoration-none">Lý
-                        Anh Khoa</a></p>
-                <p><a href="https://www.facebook.com/dc.alvin.9" class="text-decoration-none">Ngô Hoài
-                        THanh</a>
-                </p>
-            </div>
-            <div class="col-md-4 col-sm-4 col-12">
-                <p class="pe-5">
-                    Mọi thông tin liên quan đến <b class="footer-b1">Bản quyền</b> hoặc các <b class="footer-b2">Thông
-                        tin liên quan</b> các bạn đừng ngại hãy liên hệ với <i class="footer-b3">Gương mặt thương
-                        hiệu</i> của chúng tôi<br>
-                    <a href="https://www.facebook.com/profile.php?id=100066329521522" class="text-decoration-none">Phan
-                        Văn Toàn</a>
-                </p>
-                <img src="../image/Captain.jpg" alt="" class="footer-captain" style="height: 20vh;">
+                <footer class="footer">
+                    <div class="row overflow-y-auto">
+                        <div class="col-md-3 col-sm-3 col-12">
+                            <a href="#"><img src="../image/logoBlue.png" alt="" class="footer-brand"></a>
+                        </div>
+                        <div class="col-md-1 col-sm-3 col-12 mt-3">
+                            <h3>Qui định </h3>
+                            <h5><a href="#" class="text-white">Điều Khoản Chung</a></h5>
+                            <h5><a href="#" class="text-white">Chính sách riêng</a></h5>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-12 fs-5 ">
+                            <p class="h5 text-decoration-underline">Thành viên</p>
+                            <p><a href="https://www.facebook.com/profile.php?id=100066329521522"
+                                    class="text-decoration-none text-white h4">Phan
+                                    Văn Toàn</a></p>
+                            <p><a href="https://www.facebook.com/profile.php?id=100052721232206"
+                                    class="text-decoration-none text-white h4">Nguyễn
+                                    Chí
+                                    Thanh</a></p>
+                            <p><a href="https://www.facebook.com/that.ngoc.9465"
+                                    class="text-decoration-none text-white h4">Lương
+                                    Ngọc
+                                    Thật</a>
+                            </p>
+                            <p><a href="https://www.facebook.com/profile.php?id=100038079161666"
+                                    class="text-decoration-none text-white h4">Lý
+                                    Anh Khoa</a></p>
+                            <p><a href="https://www.facebook.com/dc.alvin.9"
+                                    class="text-decoration-none text-white h4">Ngô Hoài
+                                    Thanh</a>
+                            </p>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-12">
+                            <p class="pe-5">
+                                Mọi thông tin liên quan đến <b class="footer-b1">Bản quyền</b> hoặc các <b
+                                    class="footer-b2">Thông
+                                    tin liên quan</b> các bạn đừng ngại hãy liên hệ với <i class="footer-b3">Gương mặt
+                                    thương
+                                    hiệu</i> của chúng tôi<br>
+                                <a href="https://www.facebook.com/profile.php?id=100066329521522"
+                                    class="text-decoration-none">Phan
+                                    Văn Toàn</a>
+                            </p>
+                            <img src="../image/Captain.jpg" alt="" class="footer-captain" style="height: 20vh;">
 
-                <p>Xin chân thành cảm ơn, chúng tôi chúc bạn và người thân có những phút giây xem phim vui vẻ bên
-                    nhau. </p>
-            </div>
+                            <p>Xin chân thành cảm ơn, chúng tôi chúc bạn và người thân có những phút giây xem phim vui
+                                vẻ bên
+                                nhau. </p>
+                        </div>
 
-        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row justify-content-center">
 
-    </footer>
-    </div>
+                            <p><i class="bi bi-envelope-fill"></i> Email : ERD@gmail.com</p>
+                            <div class="col-auto">
+                                <i class="bi bi-facebook display-6"></i>
+                            </div>
+
+                            <div class="col-auto">
+                                <i class="bi bi-youtube display-6"></i>
+                            </div>
+
+                            <div class="col-auto">
+                                <i class="bi bi-instagram display-6"></i>
+                            </div>
+
+                            <div class="col-auto">
+                                <i class="bi bi-tiktok display-6"></i>
+                            </div>
+
+                            <div class="col-auto">
+                                <i class="bi bi-twitter display-6"></i>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                </footer>
 </body>
 
 </html>

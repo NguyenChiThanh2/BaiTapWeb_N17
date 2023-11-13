@@ -129,8 +129,8 @@
                     </div>
                     <div class="mb-3 form-check">
                         <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                        <span id="checkboxError" class="error-text" style="color: red;"></span>
+                        <label class="form-check-label" for="exampleCheck1">Nhớ mật tài khoản</label>
+            
                     </div>
                     <div class="d-grid gap-2">
                         <button type="submit" class="btn btn-info">Submit</button>
@@ -330,18 +330,18 @@
                     <a href="Trangchu.html"><img src="../image/logoBlue.png" alt="" style="width: 100%;"></a>
                 </div>
                 <div class="col-md-3">
-                    <p><a class="" href="https://www.facebook.com/profile.php?id=100066329521522"
+                    <p><a class="text-decoration-none text-white" href="https://www.facebook.com/profile.php?id=100066329521522"
                             >Phan
                             Văn Toàn</a></p>
                     <p><a href="https://www.facebook.com/profile.php?id=100052721232206"
                             style="text-decoration: none;">Nguyễn Chí Thanh</a></p>
-                    <p><a href="https://www.facebook.com/that.ngoc.9465" style="text-decoration: none;">Lương Ngọc
+                    <p><a href="https://www.facebook.com/that.ngoc.9465" class="text-decoration-none text-white">Lương Ngọc
                             Thật</a>
                     </p>
                     <p><a href="https://www.facebook.com/profile.php?id=100038079161666"
-                            style="text-decoration: none;">Lý
+                            class="text-decoration-none text-white">Lý
                             Anh Khoa</a></p>
-                    <p><a href="https://www.facebook.com/dc.alvin.9" style="text-decoration: none;">Ngô Hoài
+                    <p><a href="https://www.facebook.com/dc.alvin.9" class="text-decoration-none text-white">Ngô Hoài
                             Thanh</a>
                     </p>
                 </div>
@@ -351,7 +351,7 @@
                             style="color: cadetblue;">Thông tin liên quan</b> các bạn đừng ngại hãy liên hệ với <i
                             style="color: brown;">Gương mặt thương hiệu</i> của chúng tôi<br>
                         <a href="https://www.facebook.com/profile.php?id=100066329521522"
-                            style="text-decoration: none;">Phan
+                        class="text-decoration-none text-warning">Phan
                             Văn Toàn</a>
                         <img src="../image/Captain.jpg" alt="" style="width: 100%;">
                     </p>
@@ -363,35 +363,4 @@
             </div>
         </div>
     </div>
-    <script>$(document).ready(function () {
-            // Xử lí khi form được submit
-            $("#login").submit(function (event) {
-                event.preventDefault(); // Ngăn chặn việc gửi biểu mẫu mặc định
-
-                // Lấy giá trị từ các trường input
-                var email = $("#exampleInputEmail1").val();
-                var password = $("#exampleInputPassword1").val();
-                var isChecked = $("#exampleCheck1").is(":checked");
-
-                //ktra form
-                if (!isChecked) {
-                    $("#checkboxError").text("Vui lòng đánh dấu vào ô này.");
-                    return false;
-                } else {
-                    $("#checkboxError").text("");
-                }
-
-                if (email === "ERD@gmail.com" && password === "123456") {
-                    window.location.href = "TrangChu2.html";
-                } else {
-                    $("#passwordError").text("Sai tên đăng nhập hoặc mật khẩu");
-                    $("#emailError").text("Sai tên đăng nhập hoặc mật khẩu");
-                }
-
-                // Return true to allow form submission if all conditions pass
-                return true;
-            });
-        });
-    </script>
-
 </html>

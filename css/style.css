@@ -13,6 +13,23 @@ html {
 
 }
 
+.bg-333 {
+  --bs-bg-opacity: 1;
+  background-color: #333 !important
+}
+
+.bg-body {
+  background-image: url(../image/black-blue-darkness-light-performance-human-1531037-pxhere.com.jpg);
+  background-size: cover;
+}
+
+.mt-79 {
+  margin-top: 79px;
+}
+
+.bg-nav {
+  background-color: #333;
+}
 
 /*Trang chủ */
 
@@ -31,10 +48,6 @@ body {
   margin: 0;
   padding: 0;
   background-color: #0b0404 !important;
-
-
-  /* background-color: #0d3d53; */
-  /* Background-image: linear-gradient(#3067c0 0%, #0d3d53 100%) */
 }
 
 /* Thiết lập giao diện của header */
@@ -74,28 +87,9 @@ body {
   }
 }
 
-.info-box {
-
-  background-color: white;
-  border: 1px solid #ccc;
-  width: 140px;
-  position: absolute;
-  z-index: 1;
-  border-radius: 10px;
-  display: flex;
-  right: 5px;
 
 
-}
 
-#info-box li:hover {
-  background-color: #555;
-  /* Thay đổi màu nền khi hover qua */
-  color: #fff;
-  /* Thay đổi màu chữ khi hover qua */
-  cursor: pointer;
-  /* Thay đổi hình dạng con trỏ khi hover qua */
-}
 
 .header-menu-country {
   position: relative;
@@ -109,38 +103,40 @@ body {
   display: block;
 }
 
+/* Box info  */
+.info-box {
+  background-color: white;
+  border: 1px solid #ccc;
+  width: 140px;
+  position: absolute;
+  z-index: 1;
+  border-radius: 10px;
+  display: flex;
+  right: 5px;
+}
 
+#info-box li:hover {
+  background-color: #555;
+  /* Thay đổi màu nền khi hover qua */
+  color: #fff;
+  /* Thay đổi màu chữ khi hover qua */
+  cursor: pointer;
+  /* Thay đổi hình dạng con trỏ khi hover qua */
+}
+
+/* logo blue */
 .logoBlue {
   width: 150px;
 }
 
-.bg-333 {
-  --bs-bg-opacity: 1;
-  background-color: #333 !important
-}
-
-.bg-body {
-  background-image: url(../image/black-blue-darkness-light-performance-human-1531037-pxhere.com.jpg);
-  background-size: cover;
-}
-
-.mt-79 {
-  margin-top: 79px;
-}
-
-
-
-
-
+/* logo red  */
 .brand a {
   color: red !important;
 
 }
 
-.bg-nav {
-  background-color: #333;
-}
 
+/* btn 333 */
 .btn-333 {
   --bs-btn-color: #fff;
   --bs-btn-bg: #333;
@@ -165,6 +161,35 @@ body {
   margin-right: 0px;
 }
 
+/* Thiết lập giao diện cho phần thể loại */
+
+.btn-danger-setting {
+  width: 70px;
+  padding-right: 10px;
+}
+
+
+
+/*Menu các quốc gia*/
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f5f5f5;
+  z-index: 1;
+  cursor: default;
+  box-shadow: 0 1px 3.125rem 0 rgba(0, 00, 0, 0.2);
+  margin-top: 15px;
+  width: 150px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.nav-items-center {
+  justify-content: center !important;
+}
+
 /* Thiết lập giao diện của navigation menu */
 nav ul {
   list-style: none;
@@ -178,23 +203,21 @@ nav ul li {
 .nav-item a:hover {
   color: rgb(0, 195, 255);
   background-color: #333 !important;
-  /* Thay đổi màu tùy chọn ở đây */
 }
 
+/* color text active */
 .text-active {
   color: rgb(0, 195, 255) !important;
 }
+
+/* color bg active */
 
 .bg-active {
   background-color: #009EFD !important;
 }
 
-/* Thiết lập giao diện cho danh sách phim */
-.content {
-  color: aliceblue;
-  padding-top: 0.1px;
-}
 
+/* / */
 .content-outstanding {
   margin-bottom: 1px;
   font-size: 40px;
@@ -214,6 +237,7 @@ nav ul li {
   position: relative;
 }
 
+/* card movie  */
 .movie-list {
   display: flex;
   flex-wrap: wrap;
@@ -247,12 +271,10 @@ nav ul li {
   text-align: center;
   color: aliceblue;
 
-  /* margin-top: 10px; */
 }
 
 .movie-card p {
   font-size: 14px;
-  /* margin-top: 5px; */
   margin-bottom: 50px;
   overflow: hidden;
   -webkit-line-clamp: 2;
@@ -268,13 +290,12 @@ nav ul li {
   padding-bottom: 5px;
 }
 
-/* BOOTSTRAP ***********************************************************************BOOTSTRAP */
+
 .rounded {
   width: 120px;
   height: 190px;
   background-color: #333;
   margin-right: 25px;
-  /* margin-bottom: 50px; */
 
 }
 
@@ -311,37 +332,7 @@ nav ul li {
 }
 
 
-/* Thiết lập giao diện cho phần thể loại */
 
-
-
-
-.btn-danger-setting {
-  width: 70px;
-  padding-right: 10px;
-}
-
-
-
-/*Menu các quốc gia*/
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f5f5f5;
-  z-index: 1;
-  cursor: default;
-  box-shadow: 0 1px 3.125rem 0 rgba(0, 00, 0, 0.2);
-  margin-top: 15px;
-  width: 150px;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.nav-items-center {
-  justify-content: center !important;
-}
 
 /* Thiết lập giao diện cho footer */
 .footer {
@@ -381,29 +372,30 @@ nav ul li {
 
 }
 
-.searchBox {
-  display: flex;
-  max-width: 230px;
-  align-items: center;
-  justify-content: space-between;
-  gap: 8px;
-  background: #727e8f;
-  border-radius: 50px;
-  position: relative;
+/* menu */
+.dropdown:hover>.dropdown-menu {
+  display: grid;
+  grid-template-columns: 117px 117px 117px;
+  background-color: rgba(5, 53, 59, 0.7);
 }
 
-.searchButton {
-  color: white;
-  position: absolute;
-  right: 8px;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background: var(--gradient-2, linear-gradient(90deg, #2AF598 0%, #009EFD 100%));
-  border: 0;
-  display: inline-block;
-  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+.dropdown>.dropdown-toggle:active {
+  pointer-events: none;
 }
+
+.dropdown-item:hover {
+  background-color: rgba(0, 233, 250, 0.3);
+  color: aliceblue;
+}
+
+.btn-lg {
+  width: auto;
+}
+
+.dropdown-item {
+  color: aliceblue;
+}
+
 
 /*hover effect*/
 button:hover {
@@ -548,29 +540,5 @@ ul.sub-menu {
 
 .footer .col-md-4 p .text-white:hover {
   color: #009EFD !important;
-  
-}
 
-/* menu */
-.dropdown:hover>.dropdown-menu {
-  display: grid;
-  grid-template-columns: 117px 117px 117px;
-  background-color: rgba(5, 53, 59, 0.7);
-}
-
-.dropdown>.dropdown-toggle:active {
-  pointer-events: none;
-}
-
-.dropdown-item:hover {
-  background-color: rgba(0, 233, 250, 0.3);
-  color: aliceblue;
-}
-
-.btn-lg {
-  width: auto;
-}
-
-.dropdown-item {
-  color: aliceblue;
 }

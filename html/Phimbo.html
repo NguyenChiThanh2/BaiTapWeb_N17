@@ -12,22 +12,6 @@
     <script src="../js/bootstrap5.bundle.min.js"> </script>
     <script src="../js/main.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-
-    <style>
-        .info-box {
-
-            background-color: white;
-            border: 1px solid #ccc;
-            width: 140px;
-            position: absolute;
-            z-index: 1;
-            border-radius: 10px;
-            display: flex;
-            right: 5px;
-
-        }
-    </style>
-
 </head>
 
 <body>
@@ -37,7 +21,7 @@
                 <nav class="navbar navbar-expand-lg navbar-inverse">
                     <div class="container ">
                         <div class="brand" id="brand">
-                            <a class="text-decoration-none" href="TrangChu.html">
+                            <a class="text-decoration-none" href="TrangChu2.html">
                                 <h1><img src="../image/logoBlue.png" alt="LOGO"></h1>
                             </a>
                         </div>
@@ -65,7 +49,7 @@
                         <div class="collapse navbar-collapse " id="navbarSupportedContent">
                             <ul class="navbar-nav mb-2 mb-lg-0 fs-3 fw-bold text-white">
                                 <li class="nav-item">
-                                    <a class="btn btn-dark nav-link h5 " aria-current="page" href="TrangChu.html">Trang
+                                    <a class="btn btn-dark nav-link h5 " aria-current="page" href="TrangChu2.html">Trang
                                         Chủ</a>
                                 </li>
                                 <li class="nav-item">
@@ -229,10 +213,65 @@
             <div class="container ">
                 <div class="content-outstanding position-relative">
                     <h1 class="position-relative">
-                        <a href="Phimbo.html" class="text-decoration-none position-relative ">Phim Bộ</a>
+                        <a href="Phimbo.html" class="text-decoration-none position-relative "><i
+                                class="bi bi-film"></i>Phim Bộ</a>
                     </h1>
-
                 </div>
+                <div class="row mb-1">
+                    <form class="form-filter col-8">
+                        <div class="row g-2">
+                            <div class="col-auto " >
+                                <select class="form-select" name="order" id="order">
+                                    <option value="">-- Sắp xếp --</option>
+                                    <option value="publish_date">Ngày đăng phim</option>
+                                    <option value="publish_year">Năm sản xuất</option>
+                                    <option value="name">Tên phim</option>
+                                    <option value="view">Lượt xem</option>
+                                </select>
+                            </div>
+                            <div class="col-auto">
+                                <select class="form-select" name="genre" id="genre">
+                                    <option value="">-- Thể Loại --</option>
+                                    <option value="1">Cổ Trang - Thần Thoại</option>
+                                    <option value="3">Phiêu Lưu - Hành Động</option>
+                                    <option value="4">Tâm Lý - Tình Cảm</option>
+                                    <option value="5">Hoạt Hình</option>
+                                    <option value="6">Khoa Học - Viễn Tưởng</option>
+                                    <option value="7">Hình Sự - Chiến Tranh</option>
+                                    <option value="8">Phiêu Lưu</option>
+                                </select>
+                            </div>
+                            <div class="col-auto">
+                                <select class="form-select" name="country" id="country">
+                                    <option value="">-- Quốc gia --</option>
+                                    <option value="1">Việt Nam</option>
+                                    <option value="2">Trung Quốc</option>
+                                    <option value="3">Hàn Quốc</option>
+                                    <option value="4">Thái Lan</option>
+                                    <option value="5">Hồng Kông</option>
+                                    <option value="6">Âu - Mỹ</option>
+                                </select>
+                            </div>
+                            <div class="col-auto">
+                                <select class="form-select" name="year" id="year">  
+                                    <option value="2017">--Năm--</option>
+                                    <option value="2016">2016</option>
+                                    <option value="2015">2015</option>
+                                    <option value="2014">2014</option>
+                                    <option value="2013">2013</option>
+                                    <option value="2012">2012</option>
+                                    <option value="2011">2011</option>
+                                    <option value="2010">2010</option>
+                                </select>
+                            </div>
+                            <div class="col">
+                                <input type="submit" class="btn btn-outline-success" value="Lọc phim">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+
 
                 <div class="row">
 
@@ -384,7 +423,7 @@
                         <li class="page-item p-2">
                             <a href="#" class="page-link text-black p-3">2</a>
                         </li>
-                        <li class="page-item p-2">  
+                        <li class="page-item p-2">
                             <a href="#" class="page-link text-black p-3">3</a>
                         </li>
                         <li class="page-item p-2">
@@ -403,27 +442,34 @@
     <hr>
     <footer class="footer">
         <div class="row">
-            <div class="col-md-4 col-sm-4 col-12">
+            <div class="col-md-3 col-sm-3 col-12">
                 <a href="#"><img src="../image/logoBlue.png" alt="" class="footer-brand"></a>
             </div>
-                <div class="col-md-4 col-sm-4 col-12 fs-5 ">
-                    <p><a href="https://www.facebook.com/profile.php?id=100066329521522"
-                            class="text-decoration-none text-white">Phan
-                            Văn Toàn</a></p>
-                    <p><a href="https://www.facebook.com/profile.php?id=100052721232206"
-                            class="text-decoration-none text-white">Nguyễn
-                            Chí
-                            Thanh</a></p>
-                    <p><a href="https://www.facebook.com/that.ngoc.9465" class="text-decoration-none text-white">Lương Ngọc
-                            Thật</a>
-                    </p>
-                    <p><a href="https://www.facebook.com/profile.php?id=100038079161666"
-                            class="text-decoration-none text-white">Lý
-                            Anh Khoa</a></p>
-                    <p><a href="https://www.facebook.com/dc.alvin.9" class="text-decoration-none text-white">Ngô Hoài
-                            Thanh</a>
-                    </p>
-                </div>
+            <div class="col-md-1 col-sm-3 col-12 mt-3">
+                <h3>Qui định </h3>
+                <h5><a href="#" class="text-white">Điều Khoản Chung</a></h5>
+                <h5><a href="#" class="text-white">Chính sách riêng</a></h5>
+            </div>
+            <div class="col-md-4 col-sm-4 col-12 fs-5 ">
+                <p class="h5 text-decoration-underline">Thành viên</p>
+                <p><a href="https://www.facebook.com/profile.php?id=100066329521522"
+                        class="text-decoration-none text-white h4">Phan
+                        Văn Toàn</a></p>
+                <p><a href="https://www.facebook.com/profile.php?id=100052721232206"
+                        class="text-decoration-none text-white h4">Nguyễn
+                        Chí
+                        Thanh</a></p>
+                <p><a href="https://www.facebook.com/that.ngoc.9465" class="text-decoration-none text-white h4">Lương
+                        Ngọc
+                        Thật</a>
+                </p>
+                <p><a href="https://www.facebook.com/profile.php?id=100038079161666"
+                        class="text-decoration-none text-white h4">Lý
+                        Anh Khoa</a></p>
+                <p><a href="https://www.facebook.com/dc.alvin.9" class="text-decoration-none text-white h4">Ngô Hoài
+                        Thanh</a>
+                </p>
+            </div>
             <div class="col-md-4 col-sm-4 col-12">
                 <p class="pe-5">
                     Mọi thông tin liên quan đến <b class="footer-b1">Bản quyền</b> hoặc các <b class="footer-b2">Thông
@@ -440,8 +486,9 @@
 
         </div>
         <div class="container">
-            <div class="row justify-content-center"> 
-                <p>@ERD@gmail.com</p>
+            <div class="row justify-content-center">
+
+                <p><i class="bi bi-envelope-fill"></i> Email : ERD@gmail.com</p>
                 <div class="col-auto">
                     <i class="bi bi-facebook display-6"></i>
                 </div>

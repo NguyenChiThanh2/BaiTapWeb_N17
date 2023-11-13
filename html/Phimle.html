@@ -11,31 +11,46 @@
     <script src="../js/jquery3.7.1.js"> </script>
     <script src="../js/bootstrap5.bundle.min.js"> </script>
     <script src="../js/main.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
 
 </head>
 
 <body>
     <div class="bg-black">
         <div class="container">
-
             <div class="header">
                 <nav class="navbar navbar-expand-lg navbar-inverse">
                     <div class="container ">
                         <div class="brand" id="brand">
-                            <a class="text-decoration-none" href="TrangChu.html">
+                            <a class="text-decoration-none" href="TrangChu2.html">
                                 <h1><img src="../image/logoBlue.png" alt="LOGO"></h1>
                             </a>
                         </div>
-                        <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
+                        <div class="d-md-block  d-sm-block  d-lg-none d-flex position-relative">
+                            <img src="../image/ban.jpg" alt="Biểu tượng ảnh" style="width: 30px; height: 30px;"
+                                class="me-2 rounded rounded-circle" id="avatar-sm">
+                            <div class="info-box bg-333 d-none" id="info-box-sm">
+                                <ul class="text-start py-3">
+                                    <li class=""><i class="bi bi-envelope"></i> Email: ERD@gmail.com</li>
+                                    <li class=""><i class="bi bi-award-fill"></i> Thành viên: VIP</li>
+                                    <li class=""><i class="bi bi-person-lines-fill"></i> Thông tin tài khoản</li>
+                                    <li class=""><i class="bi bi-gear"></i> Cài đặt tài khoản </i></li>
+                                    <li class=""><i class="bi bi-box-arrow-right"></i><a href="Trangchu.html">Đăng
+                                            xuất</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button class="navbar-toggler bg-light d-flex d-md-none d-lg-none" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon "></span>
                         </button>
 
                         <div class="collapse navbar-collapse " id="navbarSupportedContent">
                             <ul class="navbar-nav mb-2 mb-lg-0 fs-3 fw-bold text-white">
                                 <li class="nav-item">
-                                    <a class="btn btn-dark nav-link h5 " aria-current="page" href="TrangChu.html">Trang
+                                    <a class="btn btn-dark nav-link h5 " aria-current="page" href="TrangChu2.html">Trang
                                         Chủ</a>
                                 </li>
                                 <li class="nav-item">
@@ -46,7 +61,7 @@
                                     <a class=" btn btn-dark nav-link text-active" href="Phimle.html">Phim Lẻ</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="btn btn-dark nav-link h5 " href="Phimbo.html">Phim Bộ</a>
+                                    <a class="btn btn-dark nav-link h5" href="Phimbo.html">Phim Bộ</a>
                                 </li>
                                 <li class="nav-item">
 
@@ -136,16 +151,61 @@
                                 </li>
                             </ul>
                         </div>
-                        <div id="Search-login-md" class="d-none d-lg-block">
-                            <div
-                                class="d-flex flex-row align-items-end align-items-md-center align-content-md-center ali">
+                        <div id="Search-login-md" class="d-none d-lg-block position-relative">
+                            <div class="d-flex flex-row align-items-end align-items-md-center align-content-md-center">
                                 <form class="d-flex" role="search">
                                     <input class="form-control float-sm-start me-3 header-search-size text-black"
-                                        type="search" placeholder="Nhập tên phim" aria-label="Search">
+                                        type="search" placeholder="Nhập tên phim" aria-label="Search"
+                                        id="header-search">
                                     <button class="btn btn-outline-info" type="submit">Tìm Kiếm</button>
                                 </form>
                             </div>
+                            <div class="d-flex z-3 position-absolute d-md-none" style="width: 78%;"
+                                id="info-history-serach">
+                                <div class="list-group text-black text-start w-100">
+                                    <a href="#"
+                                        class="list-group-item list-group-item-action bg-333 d-flex justify-content-between align-items-center">
+                                        Phim hành động
+                                        <button type="button" class="btn btn-333 text-danger btn-sm">Xóa</button>
+                                    </a>
+                                    <a href="#"
+                                        class="list-group-item list-group-item-action bg-333 d-flex justify-content-between align-items-center">
+                                        Phim tình cảm
+                                        <button type="button" class="btn btn-333 text-danger btn-sm">Xóa</button>
+                                    </a>
+
+                                    <a href="#"
+                                        class="list-group-item list-group-item-action bg-333 d-flex justify-content-between align-items-center">
+                                        Phim Hàn
+                                        <button type="button" class="btn btn-333 text-danger btn-sm">Xóa</button>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
+
+
+
+
+
+                        <div class="d-md-none d-sm-none d- d-none d-lg-block d-flex position-relative">
+                            <img src="../image/ban.jpg" alt="Biểu tượng ảnh" style="width: 30px; height: 30px;"
+                                class="me-2 rounded rounded-circle" id="avatar">
+                            <div class="info-box bg-333 d-none" id="info-box">
+                                <ul class="text-start py-3">
+                                    <li class=""><i class="bi bi-envelope"></i> Email: ERD@gmail.com</li>
+                                    <li class=""><i class="bi bi-award-fill"></i> Thành viên: VIP</li>
+                                    <li class=""><i class="bi bi-person-lines-fill"></i> Thông tin tài khoản</li>
+                                    <li class=""><i class="bi bi-gear"></i> Cài đặt tài khoản </i></li>
+                                    <li class=""><i class="bi bi-box-arrow-right"></i><a href="Trangchu.html">Đăng
+                                            xuất</a>
+
+
+
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
                     </div>
                 </nav>
             </div>
@@ -156,7 +216,8 @@
 
             <div class="content-outstanding position-relative">
                 <h1 class="position-relative">
-                    <a href="Phimle.html" class="text-decoration-none position-relative ">Phim Lẻ</a>
+                    <a href="Phimle.html" class="text-decoration-none position-relative "><i class="bi bi-film"></i>Phim
+                        Lẻ</a>
                 </h1>
 
             </div>
@@ -322,24 +383,34 @@
         </div>
     </div>
     <hr>
-    <footer class="footer ">
+    <footer class="footer">
         <div class="row">
-            <div class="col-md-4 col-sm-4 col-12">
-                <a href="Trangchu.html"><img src="../image/logoBlue.png" alt="" class="footer-brand"></a>
+            <div class="col-md-3 col-sm-3 col-12">
+                <a href="#"><img src="../image/logoBlue.png" alt="" class="footer-brand"></a>
             </div>
-            <div class="col-md-4 col-sm-4 col-12 fs-5">
-                <p><a href="https://www.facebook.com/profile.php?id=100066329521522" class="text-decoration-none">Phan
+            <div class="col-md-1 col-sm-3 col-12 mt-3">
+                <h3>Qui định </h3>
+                <h5><a href="#" class="text-white">Điều Khoản Chung</a></h5>
+                <h5><a href="#" class="text-white">Chính sách riêng</a></h5>
+            </div>
+            <div class="col-md-4 col-sm-4 col-12 fs-5 ">
+                <p class="h5 text-decoration-underline">Thành viên</p>
+                <p><a href="https://www.facebook.com/profile.php?id=100066329521522"
+                        class="text-decoration-none text-white h4">Phan
                         Văn Toàn</a></p>
-                <p><a href="https://www.facebook.com/profile.php?id=100052721232206" class="text-decoration-none">Nguyễn
+                <p><a href="https://www.facebook.com/profile.php?id=100052721232206"
+                        class="text-decoration-none text-white h4">Nguyễn
                         Chí
                         Thanh</a></p>
-                <p><a href="https://www.facebook.com/that.ngoc.9465" style="text-decoration: none;">Lương Ngọc
+                <p><a href="https://www.facebook.com/that.ngoc.9465" class="text-decoration-none text-white h4">Lương
+                        Ngọc
                         Thật</a>
                 </p>
-                <p><a href="https://www.facebook.com/profile.php?id=100038079161666" class="text-decoration-none">Lý
+                <p><a href="https://www.facebook.com/profile.php?id=100038079161666"
+                        class="text-decoration-none text-white h4">Lý
                         Anh Khoa</a></p>
-                <p><a href="https://www.facebook.com/dc.alvin.9" class="text-decoration-none">Ngô Hoài
-                        THanh</a>
+                <p><a href="https://www.facebook.com/dc.alvin.9" class="text-decoration-none text-white h4">Ngô Hoài
+                        Thanh</a>
                 </p>
             </div>
             <div class="col-md-4 col-sm-4 col-12">
@@ -357,6 +428,34 @@
             </div>
 
         </div>
+        <div class="container">
+            <div class="row justify-content-center">
+
+                <p><i class="bi bi-envelope-fill"></i> Email : ERD@gmail.com</p>
+                <div class="col-auto">
+                    <i class="bi bi-facebook display-6"></i>
+                </div>
+
+                <div class="col-auto">
+                    <i class="bi bi-youtube display-6"></i>
+                </div>
+
+                <div class="col-auto">
+                    <i class="bi bi-instagram display-6"></i>
+                </div>
+
+                <div class="col-auto">
+                    <i class="bi bi-tiktok display-6"></i>
+                </div>
+
+                <div class="col-auto">
+                    <i class="bi bi-twitter display-6"></i>
+                </div>
+            </div>
+        </div>
+
+
+
 
     </footer>
 </body>
